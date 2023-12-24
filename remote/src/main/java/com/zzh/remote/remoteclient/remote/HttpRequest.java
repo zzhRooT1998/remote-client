@@ -53,7 +53,7 @@ public class HttpRequest<V, R> implements Request<V, R> {
     private String responseDataField;
 
     /**
-     * Default response handler is {@link DefaultResponseHandLer}
+     * Default response handler is {@link DefaultResponseHandler}
      */
     private Class<ResponseHandler<V>> responseHandler;
 
