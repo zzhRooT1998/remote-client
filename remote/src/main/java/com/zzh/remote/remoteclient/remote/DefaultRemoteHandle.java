@@ -51,6 +51,7 @@ public class DefaultRemoteHandle implements RemoteHandle {
         return handleResponse(request, response);
     }
 
+    @SuppressWarnings("unchecked")
     private <V, R> V handleResponse(Request<V, R> request, ResponseEntity<Resource> response) throws RemoteClientException {
         final Class<ResponseHandler<V>> responseHandler = ((HttpRequest<V, R>) request).getResponseHandler();
         String responseHandlerName = responseHandler.getName();

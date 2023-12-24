@@ -67,7 +67,7 @@ public class DefaultResponseHandler<V> implements ResponseHandler<V> {
         private static final String SPLIT_CHAR = "#";
         static final String REMOTE_RESPONSE = "RemoteResponse";
 
-        private ResponseTransfer() {};
+        private ResponseTransfer() {}
 
         private static final Map<String, Class<? extends Response<?>>> RESPONSE_DERIVE_CLASS_MAP = new ConcurrentHashMap<>();
 

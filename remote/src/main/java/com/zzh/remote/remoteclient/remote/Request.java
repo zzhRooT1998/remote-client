@@ -10,8 +10,8 @@ import org.springframework.http.HttpMethod;
 /**
  * Use for defined request object
  *
- * @param <V› Response cLass type
- * @param <R› Request body class type
+ * @param <V> Response body class type
+ * @param <R> Request body class type
  */
 public interface Request<V, R> {
     R getBody();

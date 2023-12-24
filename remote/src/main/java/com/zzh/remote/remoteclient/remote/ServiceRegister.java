@@ -19,7 +19,7 @@ import static java.lang.String.format;
 public class ServiceRegister {
 
     @Setter
-    private final Map<String, Service> services = new HashMap<>();
+    private Map<String, Service> services = new HashMap<>();
 
     public Service find(String serviceName) {
         Service service = this.services.get(serviceName);
